@@ -27,7 +27,7 @@ function Header() {
 
   useEffect(() => {
     console.log(user);
-  })
+  },[])
 
   const login = useGoogleLogin({
     onSuccess:(codeResp)=> GetUserProfile(codeResp),
@@ -57,12 +57,12 @@ function Header() {
         {user ?
           <div className='flex items-center gap-3'>
             {/* here we add new trips as we want */}
-            <a href='/create-trip'>
+            <a href='/create-trip' className='text-black'>
               <Button variant="outline" 
               className="rounded-full">+ Create Trip</Button>
             </a>
 
-            <a href='/my-trips'>
+            <a href='/my-trips' className='text-black'>
               <Button variant="outline" 
               className="rounded-full">My Trips</Button>
             </a>
@@ -72,7 +72,7 @@ function Header() {
               </PopoverTrigger>
               <PopoverContent>
                 <h2 className="cursor-pointer" onClick={() => {
-                  googleLogout();
+                  googleLogout;
                   localStorage.clear();
                   window.location.reload();
                 }}>Logout</h2>
