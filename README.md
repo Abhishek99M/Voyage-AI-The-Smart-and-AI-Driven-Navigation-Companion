@@ -2,6 +2,8 @@
 
 AI Travel Planner is a modern web application designed to help users plan and organize their trips seamlessly. Powered by AI, it assists users by suggesting itineraries, locations to visit, and managing trip details with ease.
 
+![alt](https://github.com/Abhishek99M/AI-TRAVEL-PLANNER/blob/cc851f206011e7e658251470cd5de766eec57c48/public/landing.jpg)
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
