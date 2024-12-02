@@ -51,24 +51,24 @@ function Header() {
   }
 
   return (
-    <div className='bg-earthly-green-200 p-3 shadow-sm flex justify-between items-center px-5'>
+    <div className="bg-earthly-green-200 p-3 shadow-sm flex flex-col md:flex-row justify-between items-center px-5">
       <img src="/logo.svg"/>
       <div>
         {user ?
-          <div className='flex items-center gap-3'>
+          <div className='flex md:flex-row items-center gap-3"'>
             {/* here we add new trips as we want */}
             <a href='/create-trip' className='text-black'>
               <Button variant="outline" 
-              className="rounded-full">+ Create Trip</Button>
+              className="rounded-full text-sm md:text-base mx-2" >+ Create Trip</Button>
             </a>
 
             <a href='/my-trips' className='text-black'>
               <Button variant="outline" 
-              className="rounded-full">My Trips</Button>
+              className="rounded-full text-sm md:text-base">My Trips</Button>
             </a>
             <Popover>
               <PopoverTrigger className='object-cover bg-transparent'>
-                <img src={user?.picture}  className='h-[45px] w-[45px] rounded-full'/>
+                <img src={user?.picture}  className='h-[35px] w-[35px] md:h-[45px] md:w-[45px] rounded-full'/>
               </PopoverTrigger>
               <PopoverContent>
                 <h2 className="cursor-pointer" onClick={() => {
@@ -81,7 +81,7 @@ function Header() {
 
           </div>
           :
-          <Button onClick={() => setOpenDialog(true)}>Sign In</Button>
+          <Button onClick={() => setOpenDialog(true)} className="text-sm md:text-base">Sign In</Button>
         }
       </div>
       <Dialog open={openDialog}>
@@ -90,14 +90,14 @@ function Header() {
           <DialogHeader>
             
             <DialogDescription>
-              <img src='/logo.svg' />
-              <h2 className='font-bold text-lg mt-7'>Sign In With Google</h2>
-              <p>Sign in to the app with Google authentication securely</p>
+              <img src='/logo.svg' className="w-20 mx-auto" alt="Dialog Logo"/>
+              <h2 className='font-bold text-lg mt-7 text-center'>Sign In With Google</h2>
+              <p className="text-center">Sign in to the app with Google authentication securely</p>
 
               <Button 
               onClick={login}
-              className="mt-5 w-full flex gap-4 items-center">            
-                <FcGoogle className="h-8 w-8" style={{ width: '35px', height: '35px' }} />
+              className="mt-5 w-full flex gap-4 items-center justify-center text-sm md:text-base">            
+                <FcGoogle className="h-6 w-6 md:h-8 md:w-8" style={{ width: '35px', height: '35px' }} />
                 Sign In With Google
                 </Button>
             </DialogDescription>
