@@ -2,11 +2,9 @@
 
 AI Travel Planner is a modern web application designed to help users plan and organize their trips seamlessly. Powered by AI, it assists users by suggesting itineraries, locations to visit, and managing trip details with ease.
 
-<<<<<<< HEAD
+
 ![atl](https://github.com/Abhishek99M/AI-TRAVEL-PLANNER/blob/4b376b7da834c57d27e73ab7c1caf1bac101b119/public/landing.jpg)
-=======
-![alt](https://github.com/Abhishek99M/AI-TRAVEL-PLANNER/blob/cc851f206011e7e658251470cd5de766eec57c48/public/landing.jpg)
->>>>>>> d2fb49f71f368cdf4c38a6bf57e7c1d24520de7c
+
 
 # React + Vite
 
