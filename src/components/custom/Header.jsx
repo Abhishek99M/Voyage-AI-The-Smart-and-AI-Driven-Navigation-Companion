@@ -56,16 +56,18 @@ function Header() {
       <div>
         {user ?
           <div className='flex md:flex-row items-center gap-3"'>
-            {/* here we add new trips as we want */}
-            <a href='/create-trip' className='text-black'>
-              <Button variant="outline" 
-              className="rounded-full text-sm md:text-base mx-2" >+ Create Trip</Button>
-            </a>
-
-            <a href='/my-trips' className='text-black'>
-              <Button variant="outline" 
-              className="rounded-full text-sm md:text-base">My Trips</Button>
-            </a>
+            
+              {/* here we add new trips as we want */}
+              <a href='/create-trip' className='text-black'>
+                <Button variant="outline" 
+                className="rounded-full text-sm md:text-base mx-2" >+ Create Trip</Button>
+              </a>
+              {/* here we see our trips which we create before */}
+              <a href='/my-trips' className='text-black'>
+                <Button variant="outline" 
+                className="rounded-full text-sm md:text-base">My Trips</Button>
+              </a>
+            
             <Popover>
               <PopoverTrigger className='object-cover bg-transparent'>
                 <img src={user?.picture}  className='h-[35px] w-[35px] md:h-[45px] md:w-[45px] rounded-full'/>
