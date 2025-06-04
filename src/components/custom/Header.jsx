@@ -1,20 +1,8 @@
 import { useEffect, useState } from 'react'
 import { Button } from '../ui/button'
-import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from "@/components/ui/popover"
+import { Popover, PopoverContent, PopoverTrigger,} from "@/components/ui/popover"
 import { googleLogout, useGoogleLogin } from '@react-oauth/google';
-//import { useNavigation } from 'react-router-dom';
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-
-} from "@/components/ui/dialog"
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, } from "@/components/ui/dialog"
 import { FcGoogle } from "react-icons/fc";
 import axios from 'axios';
 
@@ -22,9 +10,6 @@ function Header() {
   const user = JSON.parse(localStorage.getItem("user"));
   const [openDialog, setOpenDialog]= useState(false);
   
-
-  
-
   useEffect(() => {
     console.log(user);
   },[])
@@ -51,13 +36,16 @@ function Header() {
   }
 
   return (
-    <div className="bg-earthly-green-200 p-3 shadow-sm flex flex-col md:flex-row justify-between items-center px-5">
+    <div className="bg-earthly-green-200 p-3 shadow-sm flex flex-col md:flex-row justify-between items-center px-4">
       <img src="/logo.svg"/>
+      
       <div>
+
         {user ?
+          
           <div className='flex md:flex-row items-center gap-3"'>
             
-              {/* here we add new trips as we want */}
+              {/* here we add new trips as we want */}              
               <a href='/create-trip' className='text-black'>
                 <Button variant="outline" 
                 className="rounded-full text-sm md:text-base mx-2" >+ Create Trip</Button>
