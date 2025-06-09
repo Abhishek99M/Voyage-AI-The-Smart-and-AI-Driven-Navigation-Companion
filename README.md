@@ -1,6 +1,6 @@
-# AI Travel Planner
+# Voyage AI: The Smart & AI-Driven Navigation Companion
 
-AI Travel Planner is a modern web application designed to help users plan and organize their trips seamlessly. Powered by AI, it assists users by suggesting itineraries, locations to visit, and managing trip details with ease.
+Voyage AI: The Smart & AI-Driven Navigation Companion is a modern web application designed to help users plan and organize their trips seamlessly. Powered by AI, it assists users by suggesting itineraries, locations to visit, and managing trip details with ease.
 
 
 ![alt](https://github.com/Abhishek99M/AI-TRAVEL-PLANNER/blob/cc851f206011e7e658251470cd5de766eec57c48/public/landing.jpg)
