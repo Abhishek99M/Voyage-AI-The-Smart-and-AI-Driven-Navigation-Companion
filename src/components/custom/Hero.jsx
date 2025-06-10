@@ -5,7 +5,9 @@ import { Link } from 'react-router-dom';
 function Hero() {
   return (
     <div className="flex flex-col items-center px-4 sm:px-6 md:px-10 lg:px-20 xl:px-36 gap-6 md:gap-8 lg:gap-10">
+      <span className="text-black-300 font-extrabold">Voyage AI: The Smart & AI-Driven Navigation Companion</span>
       <h1 className="font-extrabold text-xl sm:text-2xl md:text-3xl lg:text-5xl xl:text-5xl text-center mt-8 sm:mt-12 leading-tight lg:leading-snug">
+        
         <span className="text-[#f56551]">Discover Your Next Adventure with AI: </span>
         Personalized Itineraries at Your Fingertips
       </h1>
